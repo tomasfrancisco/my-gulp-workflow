@@ -1,0 +1,12 @@
+{
+  "StyleInputFiles" : "src/styles/**/*.sass",
+  "StyleOutputFolder" : "dist/styles",
+
+  "ScriptInputFiles" : "src/scripts/**/*.js",
+  "ScriptOutputFolder" : "dist/scripts",
+
+  "ImageInputFiles" : "src/images/**/*",
+  "ImageOutputFolder" : "dist/images",
+
+  "OutputFilesToLiveReload" : "dist/**"
+}
