@@ -1,7 +1,7 @@
 {
-  "name": "css-sass-gulp",
-  "version": "0.0.0",
-  "description": "First description",
+  "name": "my-gulp-workflow",
+  "version": "1.0.0",
+  "description": "My Gulp Workflow is a script owned by tomasfrancisco",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

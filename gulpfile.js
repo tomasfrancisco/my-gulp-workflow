@@ -55,26 +55,19 @@ gulp.task('clean', function() {
   return del([config.StyleOutputFolder, config.ScriptOutputFolder, config.ImageOutputFolder]);
 });
 
-gulp.task('default', ['clean'], function() {
-  gulp.start('styles', 'scripts', 'images');
-});
-
-// Watch
 gulp.task('watch', function() {
 
-  // Watch .scss files
   gulp.watch(config.StyleInputFiles, ['styles']);
 
-  // Watch .js files
   gulp.watch(config.ScriptInputFiles, ['scripts']);
 
-  // Watch image files
   gulp.watch(config.ImageInputFiles, ['images']);
 
-  // Create LiveReload server
   livereload.listen();
 
-  // Watch any files in dist/, reload on change
   gulp.watch([config.OutputFilesToLiveReload]).on('change', livereload.changed);
+});
 
+gulp.task('default', ['clean'], function() {
+  gulp.start('watch');
 });
